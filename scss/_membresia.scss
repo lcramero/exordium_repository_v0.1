@@ -1,0 +1,86 @@
+.bodyMemb{
+    background-image: url(/css/img/hero-images/spacestation.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: $gray;
+    .main__memb--design{
+        display: $d-flex;
+        flex-direction: column;
+        .membTitles{
+            color: $green;
+        }
+        div{
+            p{
+                text-align: center;
+                color: $light-yellow;
+                font-size: $textMedium;
+                margin: $m-3 0 25px 0;
+            }
+    
+        }
+        .main__planes--design{
+            display: $d-flex;
+            flex-direction: row;
+            justify-content: center;
+            .div__plan--design{
+                margin: 0 $m-3 0 $m-3;
+                display: $d-flex;
+                flex-direction: column;
+                justify-content: space-around;
+                text-align: center;
+                div{
+                    h4{
+                        color: $blue;
+                    }
+                    margin: $m-0;
+                    ul{
+                        li{
+                            list-style-type: none;
+                            font-size: $textxSmall;
+                            color: whitesmoke;
+                            margin: $m-0 0 $m-0 0;
+                        }
+                    }
+                    img{
+                        width: 70px;
+                    }
+                }
+            }
+            //animacion de los planes
+            .div__plan--design:hover{
+                animation-name: shadowPulse;
+                animation-duration: 1.5s;
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+            }
+            @keyframes shadowPulse{
+                0%{box-shadow: 0 0 0px rgba(14, 127, 223, 0.85);}
+                15%{box-shadow: 0 0 6px rgba(17, 142, 212, 1);}
+                30% {box-shadow: 0 0 9px rgba(32, 209, 161, 1);}
+                50% {box-shadow: 0 0 12px rgba(43, 255, 125, 1);}
+                70% {box-shadow: 0 0 9px rgba(32, 209, 161, 1);}
+                85% {box-shadow: 0 0 6px rgba(17, 142, 212, 1);}
+                100% {box-shadow: 0 0 0px rgba(14, 127, 223, 0.85);}
+            }
+        }
+    }
+}
+
+//Damos el color a los precios anteriores, el nesting no funciona
+.memb__text--design{
+    color: $light-yellow;
+    text-decoration: line-through;
+}
+//Break-point para resoluciones entre 50px y 950px
+@media only screen and (min-width: 50px) and (max-width: 950px) {
+    .bodyMemb{
+        .main__memb--design{
+            .main__planes--design{
+                display: $d-flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

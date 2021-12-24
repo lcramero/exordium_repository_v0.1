@@ -1,0 +1,674 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+/*Variables para width*/
+/*Variables para height*/
+/*Variables para display*/
+/*Variables para colors*/
+html {
+  font-size: 62.5%; }
+
+.general__titles--gray, .membTitles {
+  margin: 5rem 0 5rem 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
+  text-align: center; }
+
+.general__titles--green {
+  margin: 2rem 0 2rem 0;
+  color: #7eb457;
+  font-size: 2rem;
+  text-align: center; }
+
+.general__text--whitesmoke {
+  margin: 5rem 0 5rem 0;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  text-align: center; }
+
+.shop--general__titles {
+  margin: 5rem 0 5rem 0;
+  color: #3c5c8c;
+  font-size: 3rem;
+  text-align: center; }
+
+.button__text {
+  color: whitesmoke;
+  font-size: 1.5rem; }
+
+.form-text {
+  font-size: 1.5rem; }
+
+.text__position--center {
+  text-align: center; }
+
+body header {
+  width: 100%;
+  background: #0e7fdf;
+  background: linear-gradient(0deg, rgba(14, 127, 223, 0.85) 1%, #118ed4 11%, #1bbab2 26%, #20d1a1 40%, #2bff7d 56%, #ecfef3 86%, #ecfef3 93%);
+  box-shadow: 3px 3px 30px #3c5c8c; }
+  body header .header__titulo--green a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #2be37d; }
+  body header nav div form .form__search--design {
+    border-radius: 5px;
+    height: 37px;
+    margin-left: 60px;
+    margin-top: 7px;
+    font-size: 1.5rem; }
+  body header nav div .navbar-collapse ul .div__navbar--links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px; }
+    body header nav div .navbar-collapse ul .div__navbar--links li {
+      margin-left: 25px; }
+      body header nav div .navbar-collapse ul .div__navbar--links li .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: #3c5c8c; }
+        body header nav div .navbar-collapse ul .div__navbar--links li .hover-underline-animation h3 {
+          font-size: 1.2rem; }
+      body header nav div .navbar-collapse ul .div__navbar--links li .hover-underline-animation:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #0087ca;
+        transform-origin: bottom right;
+        transition: transform 0.5s ease-out; }
+      body header nav div .navbar-collapse ul .div__navbar--links li .hover-underline-animation:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left; }
+  body header nav div .navbar-collapse ul li a #img__navbar--size {
+    width: 60px; }
+  body header nav ul li {
+    font-size: 2rem;
+    font-weight: 500; }
+
+@media only screen and (min-width: 50px) and (max-width: 1200px) {
+  body header nav div .navbar-collapse ul .div__navbar--links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px; }
+    body header nav div .navbar-collapse ul .div__navbar--links li {
+      margin-left: 10px; }
+  body header nav div .navbar-collapse li a #img__navbar--size {
+    margin: 15px;
+    width: 5%; }
+  body header ul li {
+    font-size: 2rem;
+    font-weight: 500; } }
+
+footer {
+  background-color: #2be37d;
+  text-align: center;
+  width: 100%;
+  list-style-type: none; }
+
+.footer__link--decoration {
+  text-decoration: none;
+  margin: 1rem; }
+
+footer {
+  background: #0e7fdf;
+  background: linear-gradient(180deg, rgba(14, 127, 223, 0.85) 1%, #118ed4 10%, #1bbab2 35%, #20d1a1 61%, #2bff7d 97%);
+  box-shadow: 3px 3px 30px #3c5c8c;
+  text-align: center;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  footer div h3 {
+    text-align: center;
+    color: #a0968c;
+    font-size: 1.2rem; }
+  footer .topfooter__div--desing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    footer .topfooter__div--desing .div__contact-design {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: space-evenly; }
+      footer .topfooter__div--desing .div__contact-design div h3 {
+        color: #3c5c8c; }
+    footer .topfooter__div--desing .div__support--design {
+      margin-top: 16px; }
+      footer .topfooter__div--desing .div__support--design div h3 {
+        color: #3c5c8c; }
+      footer .topfooter__div--desing .div__support--design div a {
+        text-decoration: none; }
+        footer .topfooter__div--desing .div__support--design div a p {
+          font-size: 1.2rem;
+          font-weight: 600; }
+  footer .div__cpr--design h3 {
+    font-size: 1.2rem;
+    color: #3c5c8c; }
+  footer .div__cpr--design hr {
+    color: #3c5c8c;
+    width: 100%;
+    height: 1.5px; }
+
+body {
+  font-family: "Mulish", sans-serif;
+  overflow-x: hidden; }
+  body header h2 a img {
+    padding-top: 0.5rem;
+    width: 5%; }
+  body main {
+    width: 100%; }
+    body main div p {
+      color: #3c5c8c;
+      font-size: 1.5rem;
+      text-align: center; }
+    body main div a {
+      display: flex;
+      justify-content: center;
+      align-content: center; }
+
+#btn-back-to-top {
+  background-color: #0e62df;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; }
+
+#btn__animation--design {
+  margin: 8px;
+  padding-bottom: 8px;
+  transition: 2s;
+  border-radius: 5px; }
+  #btn__animation--design a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: whitesmoke; }
+
+#btn__animation--design:hover {
+  border-radius: 30px;
+  box-shadow: 3px 3px #7eb457;
+  cursor: grab; }
+
+.bodyIndex {
+  background-image: url(../css/img/hero-images/amanecer-planeta-tierra.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #3c5c8c; }
+  .bodyIndex .main__derivador--design {
+    margin: 3rem 0 5rem 0; }
+    .bodyIndex .main__derivador--design section h2 {
+      text-align: center;
+      /*Animacion de Neptuno*/ }
+      .bodyIndex .main__derivador--design section h2 div a img {
+        width: 30%; }
+      .bodyIndex .main__derivador--design section h2 .main__derivador--animation img {
+        transition: 3s; }
+      .bodyIndex .main__derivador--design section h2 .main__derivador--animation img:hover {
+        transform: rotateZ(360deg);
+        cursor: pointer;
+        transition: transform 2s; }
+    .bodyIndex .main__derivador--design div div p {
+      margin: 0 3rem 0 3rem; }
+    .bodyIndex .main__derivador--design .div__contenedor--design {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .bodyIndex .main__derivador--design .div__contenedor--design div img {
+        width: 60%; }
+      .bodyIndex .main__derivador--design .div__contenedor--design div p {
+        margin: 5rem 3rem 5rem; }
+      .bodyIndex .main__derivador--design .div__contenedor--design .div__img--position {
+        display: flex;
+        justify-content: center;
+        align-content: center; }
+
+.bodyAsign {
+  background-image: url(../css/img/hero-images/sun.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #3c5c8c; }
+  .bodyAsign .main__asignaturas--design .div__container--asignaturas div {
+    margin: 3rem 2rem 3rem 2rem; }
+    .bodyAsign .main__asignaturas--design .div__container--asignaturas div a {
+      text-decoration: none; }
+    .bodyAsign .main__asignaturas--design .div__container--asignaturas div h3 p {
+      font-size: 2rem;
+      color: #0e62df; }
+  .bodyAsign .main__asignaturas--design .div__container--asignaturas .container__div--asignaturas .div__asignatura--columna {
+    margin: 8rem 0 8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .bodyAsign .main__asignaturas--design .div__container--asignaturas .container__div--asignaturas .div__asignatura--columna div a .asignature__card--size {
+      width: 15%;
+      transition: 2s; }
+    .bodyAsign .main__asignaturas--design .div__container--asignaturas .container__div--asignaturas .div__asignatura--columna div a .asignature__card--size:hover {
+      transform: scale(1.15);
+      transition: transform 0.5s; }
+  .bodyAsign .main__asignaturas--design .div__container--asignaturas .div__refference--design {
+    margin: 5rem 0 -50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .bodyAsign .main__asignaturas--design .div__container--asignaturas .div__refference--design div a .logoSize {
+      width: 60px; }
+  .bodyAsign .main__asignaturas--design .main__aside--design {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: aside;
+    margin: 3rem 2rem 3rem 2rem; }
+    .bodyAsign .main__asignaturas--design .main__aside--design div {
+      margin: 3rem 0 3rem 0; }
+      .bodyAsign .main__asignaturas--design .main__aside--design div h2 {
+        margin-bottom: -3rem; }
+
+@media only screen and (min-width: 50px) and (max-width: 400px) {
+  .bodyAsign .main__asignaturas--design {
+    display: flex;
+    flex-direction: column; }
+    .bodyAsign .main__asignaturas--design .div__container--asignaturas .div__refference--design {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: space-around; }
+    .bodyAsign .main__asignaturas--design .div__container--asignaturas .container__div--asignaturas .div__asignatura--columna div a .asignature__card--size {
+      width: 50%;
+      transition: 2s; } }
+
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+  .bodyAsign .main__asignaturas--design {
+    display: flex;
+    flex-direction: column; }
+    .bodyAsign .main__asignaturas--design .div__container--asignaturas .div__refference--design {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: space-around; }
+    .bodyAsign .main__asignaturas--design .div__container--asignaturas .container__div--asignaturas .div__asignatura--columna div a .asignature__card--size {
+      width: 30%;
+      transition: 2s; } }
+
+.bodyMemb {
+  background-image: url(/css/img/hero-images/spacestation.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #3c5c8c; }
+  .bodyMemb .main__memb--design {
+    display: flex;
+    flex-direction: column; }
+    .bodyMemb .main__memb--design .membTitles {
+      color: #7eb457; }
+    .bodyMemb .main__memb--design div p {
+      text-align: center;
+      color: #ffb531;
+      font-size: 3rem;
+      margin: 5rem 0 25px 0; }
+    .bodyMemb .main__memb--design .main__planes--design {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .bodyMemb .main__memb--design .main__planes--design .div__plan--design {
+        margin: 0 5rem 0 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center; }
+        .bodyMemb .main__memb--design .main__planes--design .div__plan--design div {
+          margin: 1rem; }
+          .bodyMemb .main__memb--design .main__planes--design .div__plan--design div h4 {
+            color: #0e62df; }
+          .bodyMemb .main__memb--design .main__planes--design .div__plan--design div ul li {
+            list-style-type: none;
+            font-size: 1.5rem;
+            color: whitesmoke;
+            margin: 1rem 0 1rem 0; }
+          .bodyMemb .main__memb--design .main__planes--design .div__plan--design div img {
+            width: 70px; }
+      .bodyMemb .main__memb--design .main__planes--design .div__plan--design:hover {
+        animation-name: shadowPulse;
+        animation-duration: 1.5s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite; }
+
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0 0 0px rgba(14, 127, 223, 0.85); }
+  15% {
+    box-shadow: 0 0 6px #118ed4; }
+  30% {
+    box-shadow: 0 0 9px #20d1a1; }
+  50% {
+    box-shadow: 0 0 12px #2bff7d; }
+  70% {
+    box-shadow: 0 0 9px #20d1a1; }
+  85% {
+    box-shadow: 0 0 6px #118ed4; }
+  100% {
+    box-shadow: 0 0 0px rgba(14, 127, 223, 0.85); } }
+
+.memb__text--design {
+  color: #ffb531;
+  text-decoration: line-through; }
+
+@media only screen and (min-width: 50px) and (max-width: 950px) {
+  .bodyMemb .main__memb--design .main__planes--design {
+    display: flex;
+    flex-direction: column; } }
+
+.bodyRegistro {
+  background-image: url(/css/img/hero-images/space.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #3c5c8c; }
+  .bodyRegistro .main__registro--design {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .bodyRegistro .main__registro--design form {
+      background: #0e7fdf;
+      background: linear-gradient(126deg, rgba(14, 127, 223, 0.85) 0%, #118ed4 31%, #20d1a1 65%, #2bff7d 100%);
+      background-size: 800% 800%;
+      width: 25%;
+      margin-bottom: 3rem;
+      position: relative;
+      animation: infinite-gradient 5s ease-in infinite; }
+
+@keyframes infinite-gradient {
+  0% {
+    background-position: 0 50%;
+    border-radius: 20px 10px 20px 10px; }
+  50% {
+    background-position: 100% 50%;
+    border-radius: 0px 15px 0px 15px; }
+  100% {
+    background-position: 0 50%;
+    border-radius: 20px 10px 20px 10px; } }
+      .bodyRegistro .main__registro--design form div {
+        margin: 1rem; }
+      .bodyRegistro .main__registro--design form .main__form {
+        margin: 2rem; }
+        .bodyRegistro .main__registro--design form .main__form .main__form--text {
+          color: #3c5c8c;
+          font-size: 2rem; }
+      .bodyRegistro .main__registro--design form .div__btn--design {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 50px; }
+
+@media only screen and (min-width: 50px) and (max-width: 300px) {
+  .bodyRegistro .main__registro--design form,
+  .bodyRegistro .main__registro--design .form__aboutus--breakpoint {
+    width: 80%; } }
+
+@media only screen and (min-width: 50px) and (max-width: 600px) {
+  .bodyRegistro .main__registro--design form,
+  .bodyRegistro .main__registro--design .form__aboutus--breakpoint {
+    width: 60%; } }
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .bodyRegistro .main__registro--design form,
+  .bodyRegistro .main__registro--design .form__aboutus--breakpoint {
+    width: 40%; } }
+
+.bodyShop {
+  background-image: url(/css/img/hero-images/spaceship-move.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #3c5c8c; }
+  .bodyShop .main__shop--design .section__products--design .section__libros--design .div_libros--design {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .bodyShop .main__shop--design .section__products--design .section__libros--design .div_libros--design .div__card--design {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 50vh;
+      width: 20vh;
+      box-shadow: 3px 1px 15px 0 black;
+      margin: 3rem; }
+      .bodyShop .main__shop--design .section__products--design .section__libros--design .div_libros--design .div__card--design div img {
+        object-fit: scale-down; }
+      .bodyShop .main__shop--design .section__products--design .section__libros--design .div_libros--design .div__card--design .div__btn--design {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+  .bodyShop .main__shop--design .section__products--design .section__elementos--design .div_elementos--design {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .bodyShop .main__shop--design .section__products--design .section__elementos--design .div_elementos--design .div__card--design {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 50vh;
+      width: 20vh;
+      box-shadow: 3px 3px 15px 0 black;
+      margin: 3rem; }
+      .bodyShop .main__shop--design .section__products--design .section__elementos--design .div_elementos--design .div__card--design .div__btn--design {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+      .bodyShop .main__shop--design .section__products--design .section__elementos--design .div_elementos--design .div__card--design div img {
+        width: 150px;
+        height: 200px;
+        object-fit: scale-down; }
+
+@media only screen and (min-width: 50px) and (max-width: 600px) {
+  .main__shop--design .section__products--design .section__libros--design .div_libros--design,
+  .main__shop--design .section__products--design .section__libros--design .div_elementos--design,
+  .main__shop--design .section__products--design .section__elementos--design .div_libros--design,
+  .main__shop--design .section__products--design .section__elementos--design .div_elementos--design {
+    display: flex;
+    flex-direction: column;
+    align-content: center; } }
+
+.card-title {
+  margin-bottom: 1.5rem;
+  color: whitesmoke; }
+
+.card-text {
+  color: #2be37d; }
+
+.bodyLabs {
+  background-image: url(../css/img/hero-images/star-mountain.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #3c5c8c; }
+  .bodyLabs main .main__labs--design {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "pL mL" "cL eL";
+    margin: 3rem 0 5rem 0; }
+    .bodyLabs main .main__labs--design div {
+      margin: 2rem; }
+    .bodyLabs main .main__labs--design .pL {
+      grid-area: pL; }
+    .bodyLabs main .main__labs--design .cL {
+      grid-area: cL; }
+    .bodyLabs main .main__labs--design .mL {
+      grid-area: mL; }
+    .bodyLabs main .main__labs--design .eL {
+      grid-area: eL; }
+    .bodyLabs main .main__labs--design .div__card--size img {
+      transition: 2s;
+      width: 25%; }
+    .bodyLabs main .main__labs--design .div__card--size :hover {
+      transform: scale(1.15);
+      transition: transform 0.5s; }
+
+@media only screen and (min-width: 50px) and (max-width: 768px) {
+  .bodyLabs {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between; }
+    .bodyLabs main .main__labs--design {
+      display: flex;
+      flex-direction: column; } }
+
+.bodyAboutus {
+  background-image: url(/css/img/hero-images/sunset.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #3c5c8c; }
+  .bodyAboutus .main__form--design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .bodyAboutus .main__form--design .staff__div--design {
+      margin-bottom: 5rem; }
+      .bodyAboutus .main__form--design .staff__div--design div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 3rem 0 3rem 0; }
+        .bodyAboutus .main__form--design .staff__div--design div .staff__div--img img {
+          width: 30%; }
+        .bodyAboutus .main__form--design .staff__div--design div div {
+          align-content: center; }
+          .bodyAboutus .main__form--design .staff__div--design div div p {
+            margin: 0 3rem 0 3rem; }
+    .bodyAboutus .main__form--design div .puestos__card--design {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column; }
+      .bodyAboutus .main__form--design div .puestos__card--design .puestos__div--design {
+        margin: 3rem 0 3rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .bodyAboutus .main__form--design div .puestos__card--design .puestos__div--design div {
+          align-content: center; }
+          .bodyAboutus .main__form--design div .puestos__card--design .puestos__div--design div p {
+            margin-top: 80px; }
+        .bodyAboutus .main__form--design div .puestos__card--design .puestos__div--design .puestos__div--img {
+          margin: 3rem 0 3rem 0;
+          display: flex;
+          justify-content: center; }
+          .bodyAboutus .main__form--design div .puestos__card--design .puestos__div--design .puestos__div--img img {
+            width: 30%;
+            object-fit: scale-down; }
+    .bodyAboutus .main__form--design .contacto__div--design {
+      display: flex;
+      flex-direction: column;
+      align-content: center; }
+      .bodyAboutus .main__form--design .contacto__div--design .div__form--position {
+        display: flex;
+        align-content: center;
+        justify-content: center; }
+        .bodyAboutus .main__form--design .contacto__div--design .div__form--position form {
+          background: #0e7fdf;
+          background: linear-gradient(126deg, rgba(14, 127, 223, 0.85) 0%, #118ed4 31%, #20d1a1 65%, #2bff7d 100%);
+          background-size: 800% 800%;
+          width: 30%;
+          margin-bottom: 3rem;
+          position: relative;
+          animation: infinite-gradient 5s ease-in infinite; }
+
+@keyframes infinite-gradient {
+  0% {
+    background-position: 0 50%;
+    border-radius: 20px 10px 20px 10px; }
+  50% {
+    background-position: 100% 50%;
+    border-radius: 0px 15px 0px 15px; }
+  100% {
+    background-position: 0 50%;
+    border-radius: 20px 10px 20px 10px; } }
+          .bodyAboutus .main__form--design .contacto__div--design .div__form--position form div {
+            margin: 1rem; }
+          .bodyAboutus .main__form--design .contacto__div--design .div__form--position form .main__form {
+            margin: 2rem; }
+            .bodyAboutus .main__form--design .contacto__div--design .div__form--position form .main__form .main__form--text {
+              color: #3c5c8c;
+              font-size: 2rem; }
+            .bodyAboutus .main__form--design .contacto__div--design .div__form--position form .main__form .form__textarea--design {
+              text-align: center;
+              width: 100%; }
+          .bodyAboutus .main__form--design .contacto__div--design .div__form--position form .div__btn--design {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 50px; }
+
+@media only screen and (min-width: 50px) and (max-width: 768px) {
+  .bodyAboutus .main__form--design .contacto__div--design .div__form--position form {
+    width: 60%; } }
+
+.bodyError404 {
+  background-image: url(../css/img/hero-images/lost-space.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #3c5c8c; }
+  .bodyError404 .header__404--design div h1 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 5rem;
+    text-align: center; }
+  .bodyError404 .body__main--desing {
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .bodyError404 .body__main--desing div {
+      margin: 1rem 0 1rem 0; }
+      .bodyError404 .body__main--desing div h2 {
+        text-align: center;
+        font-size: 3rem;
+        color: #3c5c8c; }
+    .bodyError404 .body__main--desing .spaceship {
+      transition: transform 1s;
+      position: relative;
+      top: 0;
+      left: 0; }
+      .bodyError404 .body__main--desing .spaceship img {
+        width: 30%; }
+  .bodyError404 .footer__text--design div {
+    padding: 16px; }
+    .bodyError404 .footer__text--design div .error404__btn--position {
+      width: 75px;
+      font-size: 2rem; }
+  .bodyError404 .footer__text--design h3 {
+    font-size: 2rem;
+    color: #3c5c8c;
+    margin-bottom: 16px; }

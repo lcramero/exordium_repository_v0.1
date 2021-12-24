@@ -1,0 +1,66 @@
+body {
+    font-family: $mainFont;
+    //colocamos este hide para ocultar el scroll horizontal que aparece en error404.html al mover la nave espacial
+    overflow-x: hidden;
+
+    header {
+        h2 {
+            a {
+                img {
+                    padding-top: $p-0;
+                    width: $w-5;
+                }
+            }
+        }
+    }
+
+    main {
+        width: $w-100;
+
+        div {
+            p {
+                color: $gray;
+                font-size: $textxSmall;
+                text-align: center;
+            }
+
+            a {
+                display: $d-flex;
+                justify-content: center;
+                align-content: center;
+            }
+        }
+    }
+}
+
+//Boton Back-to-top
+#btn-back-to-top {
+    background-color: $blue;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+//Diseño y animación de los botones del sitio
+#btn__animation--design {
+    margin: 8px;
+    padding-bottom: 8px;
+    transition: 2s;
+    border-radius: 5px;
+
+    a {
+        text-decoration: none;
+        font-size: $textxSmall;
+        color: whitesmoke;
+    }
+}
+
+#btn__animation--design:hover {
+    border-radius: 30px;
+    box-shadow: 3px 3px $green;
+    cursor: grab;
+}

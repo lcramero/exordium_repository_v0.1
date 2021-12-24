@@ -1,0 +1,154 @@
+.bodyAboutus {
+    background-image: url(/css/img/hero-images/sunset.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: $gray;
+
+    .main__form--design {
+        display: $d-flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .staff__div--design {
+            margin-bottom: $m-3;
+
+            div {
+                display: $d-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: $m-2 0 $m-2 0;
+
+                .staff__div--img {
+                    img {
+                        width: $w-30;
+                    }
+                }
+
+                div {
+                    align-content: center;
+
+                    p {
+                        margin: 0 $m-2 0 $m-2;
+                    }
+                }
+            }
+        }
+
+        div {
+            .puestos__card--design {
+                margin-top: $m-2;
+                display: $d-flex;
+                flex-direction: column;
+
+                .puestos__div--design {
+                    margin: $m-2 0 $m-2 0;
+                    display: $d-flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    div {
+                        align-content: center;
+
+                        p {
+                            margin-top: 80px;
+                        }
+                    }
+
+                    .puestos__div--img {
+                        margin: $m-2 0 $m-2 0;
+                        display: $d-flex;
+                        justify-content: center;
+
+                        img {
+                            width: $w-30;
+                            object-fit: scale-down;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contacto__div--design {
+            display: $d-flex;
+            flex-direction: column;
+            align-content: center;
+
+            .div__form--position {
+                display: $d-flex;
+                align-content: center;
+                justify-content: center;
+
+                form {
+                    background: rgb(14, 127, 223);
+                    background: linear-gradient(126deg, rgba(14, 127, 223, 0.85) 0%,
+                            rgba(17, 142, 212, 1) 31%, rgba(32, 209, 161, 1) 65%, rgba(43, 255, 125, 1) 100%);
+                    background-size: 800% 800%;
+                    width: $w-30;
+                    margin-bottom: $m-2;
+                    position: relative;
+                    animation: infinite-gradient 5s ease-in infinite;
+
+                    @keyframes infinite-gradient {
+                        0% {
+                            background-position: 0 50%;
+                            border-radius: 20px 10px 20px 10px;
+                        }
+
+                        50% {
+                            background-position: 100% 50%;
+                            border-radius: 0px 15px 0px 15px;
+                        }
+
+                        100% {
+                            background-position: 0 50%;
+                            border-radius: 20px 10px 20px 10px;
+                        }
+                    }
+
+                    div {
+                        margin: $m-0;
+                    }
+
+                    .main__form {
+                        margin: $m-1;
+
+                        .main__form--text {
+                            color: $gray;
+                            font-size: $textSmall;
+                        }
+
+                        .form__textarea--design {
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
+
+                    .div__btn--design {
+                        margin-bottom: $m-1;
+                        display: $d-flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Break-point para resoluciones entre 50px y 768px
+@media only screen and (min-width: 50px) and (max-width: 768px) {
+    .bodyAboutus {
+        .main__form--design {
+            .contacto__div--design {
+                .div__form--position {
+                    form {
+                        width: $w-60;
+                    }
+                }
+            }
+        }
+    }
+}

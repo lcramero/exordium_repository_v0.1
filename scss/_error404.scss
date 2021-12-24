@@ -1,0 +1,53 @@
+.bodyError404{
+    background-image: url(../css/img/hero-images/lost-space.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: $gray;
+    .header__404--design{
+        div{
+            h1{
+                color: $black;
+                font-size: $textLarge;
+                text-align: center;
+            }
+        }
+    }
+    .body__main--desing{
+        display: $d-flex;
+        flex-direction: column;
+        align-content: center;
+        div{
+            margin: $m-0 0 $m-0 0;
+            h2{
+                text-align: center;
+                font-size: $textMedium;
+                color: $gray;
+            }
+        }
+        .spaceship{
+            transition: transform 1s;
+            position: relative;
+            top: 0;
+            left: 0;
+            img{
+                width: $w-30;
+            }
+        }
+    }
+    .footer__text--design{
+        div{
+            padding: 16px;
+            .error404__btn--position{
+                width: 75px;
+                font-size: $textSmall;
+            }
+        }
+        h3{
+            font-size: $textSmall;
+            color: $gray;
+            margin-bottom: 16px;
+        }
+    }
+}

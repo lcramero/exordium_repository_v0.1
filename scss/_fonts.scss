@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap');
+html{
+    font-size: 62.5%;;
+}
+$mainFont:'Mulish', sans-serif;
+$textxxSmall: 1.2rem;
+$textxSmall: 1.5rem;
+$textSmall: 2rem;
+$textMedium: 3rem;
+$textLarge: 5rem;
+.general__titles--gray, .membTitles{
+    margin: $m-3 0 $m-3 0;
+    color: $black;
+    font-size: $textMedium;
+    text-align: center;
+}
+.general__titles--green{
+    margin: $m-1 0 $m-1 0;
+    color: $green;
+    font-size: $textSmall;
+    text-align: center;   
+}
+.general__text--whitesmoke{
+    margin: $m-3 0 $m-3 0;
+    color: whitesmoke;
+    font-size: $textxSmall;
+    text-align: center;
+}
+.shop--general__titles{
+    margin: $m-3 0 $m-3 0;
+    color: $gray;
+    font-size: $textMedium;
+    text-align: center;
+}
+.button__text{
+    color: whitesmoke;
+    font-size: $textxSmall;
+}
+.form-text{
+    font-size: $textxSmall;
+}
+.text__position--center{
+    text-align: center;
+}

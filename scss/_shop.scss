@@ -1,0 +1,128 @@
+.bodyShop {
+    background-image: url(/css/img/hero-images/spaceship-move.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: $gray;
+
+    .main__shop--design {
+        .section__products--design {
+            .section__libros--design {
+                .div_libros--design {
+                    display: $d-flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    .div__card--design {
+                        border-bottom-left-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                        text-align: center;
+                        display: $d-flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 50vh;
+                        width: 20vh;
+                        box-shadow: 3px 1px 15px 0 black;
+                        margin: $m-2;
+
+                        div {
+                            img {
+                                object-fit: scale-down;
+                            }
+                        }
+
+                        .div__btn--design {
+                            font-size: $textSmall;
+                            display: $d-flex;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+
+            .section__elementos--design {
+                .div_elementos--design {
+                    display: $d-flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    .div__card--design {
+                        border-bottom-left-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                        text-align: center;
+                        display: $d-flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 50vh;
+                        width: 20vh;
+                        box-shadow: 3px 3px 15px 0 black;
+                        margin: $m-2;
+
+                        .div__btn--design {
+                            font-size: $textSmall;
+                            display: $d-flex;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+
+                        div {
+                            img {
+                                width: 150px;
+                                height: 200px;
+                                object-fit: scale-down;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Break-point para resoluciones entre 50px y 600px
+@media only screen and (min-width: 50px) and (max-width: 600px) {
+    .main__shop--design {
+        .section__products--design {
+
+            .section__libros--design,
+            .section__elementos--design {
+
+                .div_libros--design,
+                .div_elementos--design {
+                    display: $d-flex;
+                    flex-direction: column;
+                    align-content: center;
+                }
+            }
+        }
+    }
+}
+
+//Modificamos las cards desde Boostrap
+//si modificamos $spacer se modifica la card.
+//Lo que logramos aca es modificar el espacio entre los elementos de la card
+//A medida que $spacer aumenta entendemos que aumenta el margen entre los elementos
+$spacer: 3rem;
+$spacers: (0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+);
+// scss-docs-start card-variables
+$card-spacer-y: $spacer !default;
+$card-spacer-x: $spacer !default;
+$card-title-spacer-y: $spacer * .5;
+
+// scss-docs-end card-variables
+.card-title {
+    margin-bottom: $card-title-spacer-y;
+    color: whitesmoke;
+}
+
+.card-text {
+    color: $light-green;
+}

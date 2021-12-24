@@ -1,0 +1,56 @@
+.bodyLabs{
+    background-image: url(../css/img/hero-images/star-mountain.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: $gray;
+    main{
+        .main__labs--design{
+            display: $d-grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: "pL mL" "cL eL";
+            margin: $m-2 0 $m-3 0;
+            div{
+                margin: $m-1;
+            }
+            .pL{
+                grid-area: pL;
+            }
+            .cL{
+                grid-area: cL;
+            }
+            .mL{
+                grid-area: mL;
+            }
+            .eL{
+                grid-area: eL;
+            }
+            //coloco esta class acá para ahorrar codigo, de otra forma deberia colocarlo dentro de cada class pL, cL, mL y eL.
+            //estas cards no son las mismas que las de Asignaturas
+            .div__card--size img{
+                transition: 2s;
+                width: $w-25;
+            }
+            .div__card--size :hover{
+                transform: scale(1.15);
+                transition: transform 0.5s;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 50px) and (max-width: 768px) {
+    .bodyLabs{
+        display: $d-flex;
+        flex-direction: column;
+        align-content: space-between;
+        main{
+            .main__labs--design{
+                display: $d-flex;
+                flex-direction: column;
+            } 
+        }
+        
+    }
+}

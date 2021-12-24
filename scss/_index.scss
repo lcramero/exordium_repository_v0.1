@@ -1,0 +1,67 @@
+.bodyIndex {
+    background-image: url(../css/img/hero-images/amanecer-planeta-tierra.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: $gray;
+
+    .main__derivador--design {
+        margin: $m-2 0 $m-3 0;
+
+        section {
+            h2 {
+                text-align: center;
+
+                div {
+                    a {
+                        img {
+                            width: $w-30;
+                        }
+                    }
+                }
+
+                /*Animacion de Neptuno*/
+                .main__derivador--animation img {
+                    transition: 3s;
+                }
+
+                .main__derivador--animation img:hover {
+                    transform: rotateZ(360deg);
+                    cursor: pointer;
+                    transition: transform 2s;
+                }
+            }
+        }
+
+        div {
+            div {
+                p {
+                    margin: 0 $m-2 0 $m-2;
+                }
+            }
+        }
+
+        .div__contenedor--design {
+            display: $d-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            div {
+                img {
+                    width: $w-60;
+                }
+
+                p {
+                    margin: $m-3 $m-2 $m-3;
+                }
+            }
+
+            .div__img--position {
+                display: $d-flex;
+                justify-content: center;
+                align-content: center;
+            }
+        }
+    }
+}

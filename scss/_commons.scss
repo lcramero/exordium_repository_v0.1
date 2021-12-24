@@ -1,0 +1,50 @@
+// El simbolo " * " aplica lo que esté dentro de las llaves a todos los elementos del html
+* {
+	padding: 0;
+	margin: 0;
+}
+
+//variables para padding
+$p-0: 0.5rem;
+$p-1: 2rem;
+$p-2: 3rem;
+$p-3: 5rem;
+//variables para margin
+$m-0: 1rem;
+$m-1: 2rem;
+$m-2: 3rem;
+$m-3: 5rem;
+$m-4: 8rem;
+$m-5: 10rem;
+/*Variables para width*/
+$w-100: 100%;
+$w-80: 80%;
+$w-75: 75%;
+$w-60: 60%;
+$w-50: 50%;
+$w-40: 40%;
+$w-30: 30%;
+$w-25: 25%;
+$w-20: 20%;
+$w-15: 15%;
+$w-10: 10%;
+$w-5: 5%;
+/*Variables para height*/
+$h-100: 100vh;
+$h-75: 75vh;
+$h-60: 60vh;
+$h-50: 50vh;
+$h-30: 30vh;
+$h-25: 25vh;
+$h-15: 15vh;
+/*Variables para display*/
+$d-flex: flex;
+$d-grid: grid;
+/*Variables para colors*/
+$gray: rgba(60, 92, 140, 1);
+$green: rgba(126, 180, 87, 1);
+$black: rgba(0, 0, 0, .5);
+$light-green: rgba(43, 227, 125, 1);
+$blue: rgba(14, 98, 223, 1);
+$light-gray: rgba(160, 150, 140, 1);
+$light-yellow: rgba(255, 181, 49, 1);

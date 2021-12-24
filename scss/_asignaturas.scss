@@ -1,0 +1,146 @@
+.bodyAsign {
+    background-image: url(../css/img/hero-images/sun.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: $gray;
+
+    .main__asignaturas--design {
+        .div__container--asignaturas {
+            div {
+                margin: $m-2 $m-1 $m-2 $m-1;
+
+                a {
+                    text-decoration: none;
+                }
+
+                h3 {
+                    p {
+                        font-size: $textSmall;
+                        color: $blue;
+                    }
+                }
+            }
+
+            .container__div--asignaturas {
+                .div__asignatura--columna {
+                    margin: $m-4 0 $m-4 0;
+                    display: $d-flex;
+                    flex-direction: column;
+                    align-content: center;
+
+                    div {
+                        a {
+
+                            //Diseño y animacion de las cards para Asignaturas y Labs
+                            .asignature__card--size {
+                                width: $w-15;
+                                transition: 2s;
+                            }
+
+                            .asignature__card--size:hover {
+                                transform: scale(1.15);
+                                transition: transform 0.5s;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .div__refference--design {
+                margin: $m-3 0 -50px 0;
+                display: $d-flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                div {
+                    a {
+                        .logoSize {
+                            width: 60px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main__aside--design {
+            display: $d-flex;
+            flex-direction: column;
+            justify-content: space-around;
+            grid-area: aside;
+            margin: $m-2 $m-1 $m-2 $m-1;
+
+            div {
+                margin: $m-2 0 $m-2 0;
+
+                h2 {
+                    margin-bottom: -$m-2;
+                }
+            }
+        }
+    }
+}
+
+//Break-points para las distintas resoluciones
+@media only screen and (min-width: 50px) and (max-width: 400px) {
+    .bodyAsign {
+        .main__asignaturas--design {
+            display: $d-flex;
+            flex-direction: column;
+
+            .div__container--asignaturas {
+                .div__refference--design {
+                    display: $d-flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: space-around;
+                }
+
+                .container__div--asignaturas {
+                    .div__asignatura--columna {
+                        div {
+                            a {
+                                .asignature__card--size {
+                                    width: $w-50;
+                                    transition: 2s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+    .bodyAsign {
+        .main__asignaturas--design {
+            display: $d-flex;
+            flex-direction: column;
+
+            .div__container--asignaturas {
+                .div__refference--design {
+                    display: $d-flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: space-around;
+                }
+
+                .container__div--asignaturas {
+                    .div__asignatura--columna {
+                        div {
+                            a {
+                                .asignature__card--size {
+                                    width: $w-30;
+                                    transition: 2s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
